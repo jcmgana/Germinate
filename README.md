@@ -1,4 +1,4 @@
-Nombre del Proyecto sin determinar
+Nombre del Proyecto Germinate
 
 Descripción:
 
