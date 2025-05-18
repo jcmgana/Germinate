@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Entrega</title>
+
+    <!-- Acá linkeo los CSS de la estructura de todas las páginas y la principal-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Acá linkeo las fuentes y los íconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Hero con header incluido -->
+        <header id="top" class="header">
+            <div class="header-contenedor">
+            <div class="logo">
+                <a href="#top"><img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <!-- Links del nav -->        
+            
+            <nav class="nav">            
+                <ul>
+                    <li><a href="#quienes-somos">Quienes Somos</a></li>
+                    <li><a href="#semillas">Semillas</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    <div class="parallax-hero">
+        <div class="hero-imagen">
+            <div class="hero-texto">
+            <h1>LLEGASTE</h1>
+            <div class="wrapper">
+                <div class="box box-semillas"><a href="#semillas"> Creemos tu futura huerta</a></div>
+                <div class="boxes">
+                <div class="box box-quienes"><a href="#quienes-somos">Quienes somos</a></div>
+                <div class="box box-contacto"><ahref="#contacto">Contactanos</ahref=></div>
+                </div>
+            </div>
+            </div>
+            <div><button id="boton-top"><a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a></button></div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <section id="quienes-somos">
+            <div class="mision">
+            <p>Somos un emprendimiento dedicado a proveer <b>las mejores semillas</b> de variedades conocidas comercialmente y también muchas otras de valor histórico. Vas a poder encontrar sabores y colores para poder ver tu huerta vibrante y productiva todo el año. <br><br>
+            Nuestra misión es poder brindar plantas de calidad, sabores inesperados e increíbles y te asesoramos para que puedas estar tranquilo de que cada semilla sea una planta y puedas disfrutarla por mucho tiempo.<br>  <b>Frutas, verduras, aromáticas y flores.</b> <br><br>
+            <strong>Tenemos todo para vos y tu jardín</strong>.<br></p>
+            </div>
+            <div class="video">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/7_l-79O03fw" title="Relaxing Garden with Me! (No talking - just nature sounds) ASMR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </section>
+        <div class="parallax1"></div>
+
+        <section id="semillas">
+            <h2>Temporadas</h2>
+                <div class="temporadas-container">
+                    
+                    <a href="oto-inv.html" class="temporada">
+                    <img src="https://images.unsplash.com/photo-1605279682024-5a25531582dc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="Otoño-Invierno">
+                    <p>Otoño-Invierno</p>
+                    </a>
+
+                    <a href="pri-ver.html" class="temporada">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Primavera-Verano">
+                    <p>Primavera-Verano</p>
+                    </a>
+
+                </div>
+        </section>
+
+        <div class="parallax2"></div>
+        
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-container">
+                <div class="card">
+                    <p>"Las semillas brotaron todas, <b>excelente calidad.</b>"</p>
+                    <h4>- Ana M.</h4>
+                </div>
+                <div class="card">
+                    <p>"<b>Muy buena atención</b>, me asesoraron en todo momento y las semillas crecieron rapidísimo."
+                    <h4>Laura G.</h4>
+                </div>
+                <div class="card">
+                    <p>"Gran variedad de especies, llegaron rápido y bien embaladas.<br> <b>¡Voy a volver a comprar!</b>"</p>
+                    <h4>- Carlos P.</h4>
+                </div>
+            </div>
+        </section>
+
+        <div class="parallax1"></div>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xqaqnzwo" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <div class="botones-contacto">
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset" id="limpiar">Limpiar</button>
+</div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quienes Somos</a></li>
+                    <li><a href="#semillas">Semillas</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h4>Contactanos</h4>
+                <div class="botones-rrss">
+                <p><a href="https://www.facebook.com" class="fa fa-facebook"></a></p>
+                <p><a href="https://www.instagram.com" class="fa fa-instagram"></a></p>
+                </div>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7696.2631745810795!2d-57.53739931041576!3d-38.00603820053557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1747246907333!5m2!1ses!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
