@@ -1,6 +1,6 @@
 header  {
     background-color: rgba(96, 126, 166, 0.2);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,48 +25,109 @@ header  {
 }
 
 .semillas-container  {
-    margin: 10vw;
+    margin: 5vw;
     grid-template-columns: repeat(3, 1fr);
     display: grid;
     justify-content: center;
-    gap: 10vw;
+    gap: 3vw;
     text-align: center;
 }
 .card {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img  {
-    height: 150px;
+    height: 9.375rem;
 }
 
 .card h4 {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-size: 0.9em;
     color: #666;
 }
 
 .card p {
-    margin-top: 5px;
+    margin-top: 0.313rem;
     font-weight: bold;
 }
 
 .card button  {
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    border-radius: 0.313rem;
+    padding: 0.313rem;
+    margin-top: 0.938rem;
     color: black;
     transition: all 0.5s ease-out;
     backdrop-filter: blur(10px)
 }
 
+#boton-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 128, 0, 0.6);
+    color: white;
+    border-radius: 15%;
+    text-decoration: none;
+    font-size: 30px;
+    width: 50px;        
+    height: 50px;       
+    display: flex;      
+    align-items: center;   
+    justify-content: center;
+    padding-right: 15px;
+    border: none;
+    box-shadow:  4px 6px rgba(0, 0, 0, 0.1)        
+}
+.fa-arrow-up  {
+    color: white;
+}
+#boton-top:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
 /* Estilo para el footer */
 footer {
     background-color: #8C442A;
+}
+
+@media (max-width: 992px) {
+    .semillas-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        margin: 6vw;
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .semillas-container {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+        margin: 8vw 5vw;
+    }
+    
+    .card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .card img {
+        height: auto;
+        max-height: 8rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    /* Ajusta el espacio para las cards considerando el header fijo */
+    .hero-imagen {
+        padding-top: 110px; /* Ajusta según la altura de tu header */
+    }
 }

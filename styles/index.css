@@ -21,6 +21,7 @@
     transform: translate(-50%, -50%);
     color: white;
     padding-top: 20%;
+    margin-top: 6rem;
 }
 
 .wrapper {
@@ -145,20 +146,20 @@ main  {
 }
 /***** Semillas *****/
 #semillas {
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
     background-image: linear-gradient(#F2D6B3, #D9C589);
 }
 
 #semillas img {
-    width: 388px;
-    height: 259px;
+    width: 24.25rem;
+    height: 16.188rem;
 }
 .temporadas-container {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 9.375rem;
 }
 .temporada:hover img {
     filter: brightness(1.2);
@@ -256,3 +257,78 @@ form button {
 #limpiar:hover {
     opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+
+.parallax-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Evita desbordamiento */
+}
+    /* HERO TEXT */
+.hero-texto {
+    position: relative; /* Cambia de absolute a relative */
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 0;
+    padding-top: 150px; /* Espacio para header */
+    width: 100%;
+    text-align: center;
+}
+
+    /* BOTONES HERO */
+    .wrapper {
+        gap: 0.5rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 50;
+    }
+
+    .box {
+        font-size: 0.9rem;
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* IMAGENES DE SEMILLAS */
+    #semillas img {
+        width: 100%;
+        height: auto;
+    }
+
+    .temporadas-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* GRID DE RESEÑAS */
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    /* PARALLAX */
+    .parallax-hero,
+    .parallax1,
+    .parallax2 {
+        background-attachment: scroll;
+    }
+    }

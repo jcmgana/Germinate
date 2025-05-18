@@ -1,6 +1,6 @@
 header  {
-    background-color:rgba(7, 152, 242, 0.2); ;
-    position: fixed;
+    background-color: rgba(7, 152, 242, 0.2); ;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,6 +69,31 @@ img  {
     backdrop-filter: blur(10px)
 }
 
+#boton-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 128, 0, 0.6);
+    color: white;
+    border-radius: 15%;
+    text-decoration: none;
+    font-size: 30px;
+    width: 50px;        
+    height: 50px;       
+    display: flex;      
+    align-items: center;   
+    justify-content: center;
+    padding-right: 15px;
+    border: none;
+    box-shadow:  4px 6px rgba(0, 0, 0, 0.1)        
+}
+.fa-arrow-up  {
+    color: white;
+}
+#boton-top:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
 /* Estilo para el footer */
 footer {
     background-color: #F25A38;
@@ -76,4 +101,30 @@ footer {
 
 .footerNav a:hover {
     color: #116EBF; /* Color dorado al pasar el mouse */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .semillas-container {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+        margin: 8vw 5vw;
+    }
+    
+    .card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .card img {
+        height: auto;
+        max-height: 8rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    /* Ajusta el espacio para las cards considerando el header fijo */
+    .hero-imagen {
+        padding-top: 110px; /* Ajusta según la altura de tu header */
+    }
 }
