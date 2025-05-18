@@ -32,38 +32,40 @@ header  {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
     justify-content: center;
-    gap: 10vw;
+    gap: 3vw;
     text-align: center;
 }
 .card {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img  {
-    height: 150px;
+    height: 9.375rem;
 }
 
 .card h4 {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-size: 0.9em;
     color: #666;
 }
 
 .card p {
-    margin-top: 5px;
+    margin-top: 0.313rem;
     font-weight: bold;
 }
 
 .card button  {
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    border-radius: 0.313rem;
+    padding: 0.313rem;
+    margin-top: 0.938rem;
     color: black;
     transition: all 0.5s ease-out;
     backdrop-filter: blur(10px)
