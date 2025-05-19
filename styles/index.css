@@ -133,6 +133,12 @@ main  {
     background-image: linear-gradient(white, #F2D6B3);
 }
 
+#quienes-somos h2   {
+    margin-bottom: 1.5em;
+    line-height: 2.6;
+    text-align: center;
+}
+
 .mision p {
     margin-bottom: 1.5em;
     line-height: 2.6;
