@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-html  {
+html {
     font-family: "Montserrat", sans-serif;
-    font-weight:normal;
+    font-weight: normal;
     font-style: normal;
 }
 
-body  {
+body {
     height: 100%;
     width: 100%;
 }
 
 
 /***** Header *****/
-.header {
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,7 +25,8 @@ body  {
     z-index: 10;
     background: rgba(75, 75, 75, 0.2);
     backdrop-filter: blur(5px);
-    padding: 0; /* dejar que el contenido lo maneje */
+    padding: 0;
+    /* dejar que el contenido lo maneje */
 }
 
 .header-contenedor {
@@ -44,34 +45,35 @@ body  {
 }
 
 
-h1  {
-    font-size:4vw
+h1 {
+    font-size: 4vw
 }
 
-a  {
+a {
     text-decoration: none;
 }
 
 /***** Nav  *****/
-nav ul  {
+nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav ul li  {
+nav ul li {
     display: inline-block;
     margin: 0 0.625rem;
 }
 
-nav ul li a  {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover  {
-    color: #FFD700; /* Color dorado al pasar el mouse */
+nav a:hover {
+    color: #FFD700;
+    /* Color dorado al pasar el mouse */
 }
 
 
@@ -85,14 +87,14 @@ footer {
     bottom: 0;
 }
 
-.footer-container{
+.footer-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 
 
 /***** Footer Nav *****/
-.footerNav ul{
+.footerNav ul {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -109,7 +111,8 @@ footer {
 }
 
 .footerNav a:hover {
-    color: #FFD700; /* Color dorado al pasar el mouse */
+    color: #FFD700;
+    /* Color dorado al pasar el mouse */
 }
 
 
@@ -125,7 +128,7 @@ footer {
 
 }
 
-.botones-rrss  {
+.botones-rrss {
     margin-top: 0.625rem;
     justify-content: center;
     display: flex;
@@ -148,12 +151,12 @@ footer {
     color: white;
 }
 
- /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-width: 1366px){
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width: 1366px) {
     .parallax {
-    background-attachment: scroll;
+        background-attachment: scroll;
     }
-} 
+}
 
 @media (max-width: 768px) {
     nav ul li {
@@ -174,4 +177,4 @@ footer {
     h1 {
         font-size: 6vw;
     }
-    }
+}

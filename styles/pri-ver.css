@@ -1,5 +1,6 @@
-header  {
-    background-color: rgba(7, 152, 242, 0.2); ;
+header {
+    background-color: rgba(7, 152, 242, 0.2);
+    ;
     position: absolute;
     top: 0;
     left: 0;
@@ -12,22 +13,22 @@ header  {
 
 
 .hero-imagen {
-    background-image: linear-gradient(
-        rgba(7, 152, 242, 0.5),
-        rgba(242, 162, 92, 0.5),
-        rgba(242, 90, 56, 0.5)),
+    background-image: linear-gradient(rgba(7, 152, 242, 0.5),
+            rgba(242, 162, 92, 0.5),
+            rgba(242, 90, 56, 0.5)),
         url("https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Asegura que se vea */
+    min-height: 100vh;
+    /* Asegura que se vea */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.semillas-container  {
+.semillas-container {
     margin: 10vw;
     grid-template-columns: repeat(3, 1fr);
     display: grid;
@@ -35,6 +36,7 @@ header  {
     gap: 3vw;
     text-align: center;
 }
+
 .card {
     padding: 1.25rem;
     background-color: rgb(255, 255, 255);
@@ -47,7 +49,7 @@ header  {
     justify-content: space-between;
 }
 
-img  {
+img {
     height: 9.375rem;
 }
 
@@ -62,7 +64,7 @@ img  {
     font-weight: bold;
 }
 
-.card button  {
+.card button {
     border-radius: 0.313rem;
     padding: 0.313rem;
     margin-top: 0.938rem;
@@ -80,18 +82,20 @@ img  {
     border-radius: 15%;
     text-decoration: none;
     font-size: 30px;
-    width: 50px;        
-    height: 50px;       
-    display: flex;      
-    align-items: center;   
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding-right: 15px;
     border: none;
-    box-shadow:  4px 6px rgba(0, 0, 0, 0.1)        
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1)
 }
-.fa-arrow-up  {
+
+.fa-arrow-up {
     color: white;
 }
+
 #boton-top:hover {
     background-color: rgb(255, 255, 255, 0.3);
 }
@@ -102,7 +106,8 @@ footer {
 }
 
 .footerNav a:hover {
-    color: #116EBF; /* Color dorado al pasar el mouse */
+    color: #116EBF;
+    /* Color dorado al pasar el mouse */
 }
 
 /* Media queries para dispositivos móviles */
@@ -112,21 +117,22 @@ footer {
         gap: 5vw;
         margin: 8vw 5vw;
     }
-    
+
     .card {
         max-width: 90%;
         margin: 0 auto;
     }
-    
+
     .card img {
         height: auto;
         max-height: 8rem;
         width: 100%;
         max-width: 200px;
     }
-    
+
     /* Ajusta el espacio para las cards considerando el header fijo */
     .hero-imagen {
-        padding-top: 110px; /* Ajusta según la altura de tu header */
+        padding-top: 110px;
+        /* Ajusta según la altura de tu header */
     }
 }

@@ -1,9 +1,8 @@
-
-.parallax-hero  {
+.parallax-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1611843467160-25afb8df1074?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     height: 100vh;
     background-attachment: fixed;
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -28,10 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem; /* Espacio entre los botones */
-    height: 250px; /* Ajustá según lo que necesites */
-    justify-content: space-between; /* Distribuye el botón de arriba y los dos de abajo */
-    }
+    gap: 1rem;
+    /* Espacio entre los botones */
+    height: 250px;
+    /* Ajustá según lo que necesites */
+    justify-content: space-between;
+    /* Distribuye el botón de arriba y los dos de abajo */
+}
 
 
 
@@ -45,33 +47,32 @@
     backdrop-filter: blur(10px)
 }
 
-.box a  {
+.box a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 .box:hover,
-.box:focus  {
+.box:focus {
     background-color: rgba(0, 0, 0, 1);
     color: #333
-    
-
 }
 
-.box-semillas  {
+.box-semillas {
     margin-top: 60px;
     background-color: rgba(217, 181, 4, 0.2);
 }
 
-.box-quienes  {
+.box-quienes {
     background-color: rgba(228, 112, 118, 0.2);
 }
 
-.box-contacto  {
-    background-color: rgba(11, 216, 4, 0.2); 
+.box-contacto {
+    background-color: rgba(11, 216, 4, 0.2);
 }
-.boxes  {
+
+.boxes {
     display: flex;
 }
 
@@ -84,30 +85,32 @@
     border-radius: 15%;
     text-decoration: none;
     font-size: 30px;
-    width: 50px;        
-    height: 50px;       
-    display: flex;      
-    align-items: center;   
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding-right: 15px;
     border: none;
-    box-shadow:  4px 6px rgba(0, 0, 0, 0.1)        
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1)
 }
-.fa-arrow-up  {
+
+.fa-arrow-up {
     color: white;
 }
+
 #boton-top:hover {
     background-color: rgb(255, 255, 255, 0.3);
 }
 
 
-main  {
-    background-color: #ffffff;    
+main {
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-  /* Efecto parallax */
+/* Efecto parallax */
 .parallax1,
 .parallax2 {
     background-attachment: fixed;
@@ -117,23 +120,23 @@ main  {
 }
 
 .parallax1 {
-  /* Imagen */
+    /* Imagen */
     background-image: url("https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     min-height: 250px;
 }
 
-.parallax2{
+.parallax2 {
     background-image: url("https://images.unsplash.com/photo-1527863280617-15596f92e5c8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-        min-height: 250px;
+    min-height: 250px;
 }
 
 /***** Quienes somos *****/
-#quienes-somos  {
+#quienes-somos {
     padding: 30px;
     background-image: linear-gradient(white, #F2D6B3);
 }
 
-#quienes-somos h2   {
+#quienes-somos h2 {
     margin-bottom: 1.5em;
     line-height: 2.6;
     text-align: center;
@@ -145,11 +148,12 @@ main  {
     text-align: center;
 }
 
-.video  {
+.video {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /***** Semillas *****/
 #semillas {
     padding: 1.25rem;
@@ -161,12 +165,14 @@ main  {
     width: 24.25rem;
     height: 16.188rem;
 }
+
 .temporadas-container {
     margin-top: 1.25rem;
     display: flex;
     justify-content: center;
     gap: 9.375rem;
 }
+
 .temporada:hover img {
     filter: brightness(1.2);
 }
@@ -175,7 +181,7 @@ main  {
 #reseñas {
     text-align: center;
     padding: 20px;
-    background-image: linear-gradient(#F2D6B3,#BCBF60);
+    background-image: linear-gradient(#F2D6B3, #BCBF60);
 }
 
 .reseñas-container {
@@ -218,7 +224,7 @@ main  {
 #contacto {
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(#BCBF60,#333);
+    background-image: linear-gradient(#BCBF60, #333);
 }
 
 form {
@@ -228,7 +234,8 @@ form {
     margin: 0 auto;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -244,18 +251,18 @@ form button {
     margin: 15px;
 }
 
-.botones-contacto  {
-    display:flex;
+.botones-contacto {
+    display: flex;
     justify-content: center;
-    gap:20px;
-    margin-top:20px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 #enviar {
     background-color: #4CAF50;
 }
 
-#limpiar  {
+#limpiar {
     background-color: red;
 }
 
@@ -266,26 +273,33 @@ form button {
 
 @media (max-width: 768px) {
 
-.parallax-hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    overflow: hidden; /* Evita desbordamiento */
-}
+    .parallax-hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centra verticalmente */
+        align-items: center;
+        /* Centra horizontalmente */
+        height: 100vh;
+        /* Ocupa toda la altura de la ventana */
+        overflow: hidden;
+        /* Evita desbordamiento */
+    }
+
     /* HERO TEXT */
-.hero-texto {
-    position: relative; /* Cambia de absolute a relative */
-    top: auto;
-    left: auto;
-    transform: none;
-    margin-top: 0;
-    padding-top: 150px; /* Espacio para header */
-    width: 100%;
-    text-align: center;
-}
+    .hero-texto {
+        position: relative;
+        /* Cambia de absolute a relative */
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 0;
+        padding-top: 150px;
+        /* Espacio para header */
+        width: 100%;
+        text-align: center;
+    }
 
     /* BOTONES HERO */
     .wrapper {
@@ -337,4 +351,4 @@ form button {
     .parallax2 {
         background-attachment: scroll;
     }
-    }
+}
